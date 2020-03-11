@@ -44,7 +44,7 @@ You will need [NSIS](http://nsis.sourceforge.io) - just download this repo and u
 
 ## Making your own cursors?
 
-The simple answer is to use [RealWorld Cursor Editor](http://www.rw-designer.com/cursor-maker). .cur files are basically .ico files with a different extension. So you can edit them in anything that edits ico files (e.g. [CursorWorkshop](https://www.axialis.com/cursorworkshop/) and [Inkscape](https://inkscape.org/). 
+The simple answer is to use [RealWorld Cursor Editor](http://www.rw-designer.com/cursor-maker). **.cur** files are basically **.ico** files with a different extension. So you can edit them in anything that edits ico files (e.g. [CursorWorkshop](https://www.axialis.com/cursorworkshop/) and [Inkscape](https://inkscape.org/).) 
 
 ## Authors
 
