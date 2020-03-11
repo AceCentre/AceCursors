@@ -35,7 +35,7 @@ Navigate to: ``%ProgramData%\Microsoft\Windows\Start Menu\Programs\Ace centre\Ac
 or 
 ``%AppData%\Microsoft\Windows\Start Menu\Programs\Ace centre\Ace cursors`` and double click on the ``UninstallAceCursors.exe`` 
 
-If you have done it the manual method - just remove anything found in ``C:\Windows\Cursors\Ace Cursors``
+If you have installed it using the manual method - just remove anything found in ``C:\Windows\Cursors\Ace Cursors``
 
 
 ## Creating the installer
