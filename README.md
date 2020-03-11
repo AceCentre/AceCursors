@@ -21,6 +21,9 @@ Download the installer here and run it. It simply places all the cursors at ``C:
 
 You may also want to pop the ``Mouse Pointers Properties.lnk`` somewhere sensible like the shortcut. Its a quick link to the mouse pointers properties control panel. If you want you can make this yourself by creating a shortcut with the following as the destination
 
+-  Right click on a empty area on desktop, and click on New and Shortcut. 
+-  Paste the following in: 
+
 ```
 %SystemRoot%\System32\rundll32.exe shell32.dll,Control_RunDLL main.cpl,,1
 ```
