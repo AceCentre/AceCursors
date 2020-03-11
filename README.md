@@ -19,7 +19,7 @@ You have a couple of options.
 
 [Download a zip of this directory](https://github.com/AceCentre/AceCursors/archive/master.zip) and manually copy and paste the entire ``Ace Cursors`` directory to ``C:\Windows\Cursors\Ace Cursors``
 
-You may also want to pop the ``Mouse Pointers Properties.lnk`` somewhere sensible like the shortcut. Its a quick link to the mouse pointers properties control panel. If you want you can make this yourself by creating a shortcut with the following as the destination
+You may also want to pop the ``Mouse Pointers Properties.lnk`` somewhere sensible like the desktop. Its a quick link to the mouse pointers properties control panel. If you want you can make this yourself:
 
 -  Right click on a empty area on desktop, and click on New and Shortcut. 
 -  Paste the following in: 
