@@ -240,7 +240,9 @@ Section -AdditionalIcons
   CreateDirectory "$SMPROGRAMS\Ace Centre"
   CreateDirectory "$SMPROGRAMS\Ace Centre\Ace Cursors"
   CreateShortCut "$SMPROGRAMS\Ace Centre\Ace Cursors\Uninstall Ace Cursors.lnk" "$INSTDIR\uninst.exe"
-  CreateShortCut "$SMPROGRAMS\Ace Centre\Ace Cursors\Open Mouse Pointers.lnk" "%SystemRoot%\System32\rundll32.exe shell32.dll,Control_RunDLL main.cpl,,1"
+  SetOutPath "$SMPROGRAMS\Ace Centre\Ace Cursors"
+  SetOverwrite try
+  File "Mouse Pointers Properties.lnk"
 SectionEnd
 
 Section -Post
