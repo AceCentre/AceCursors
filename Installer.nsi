@@ -456,7 +456,7 @@ Section Uninstall
   Delete "$INSTDIR\Left hand\spectrum fast.ani"
 
   Delete "$SMPROGRAMS\Ace Centre\Ace Cursors\Uninstall Ace Cursors.lnk"
-  Delete "$SMPROGRAMS\Ace Centre\Ace Cursors\Open Mouse Pointers.lnk"
+  Delete "$SMPROGRAMS\Ace Centre\Ace Cursors\Mouse Pointers Properties.lnk"
 
   RMDir "$SMPROGRAMS\Ace Centre\Ace Cursors"
   RMDir "$INSTDIR\right hand"
