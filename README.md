@@ -37,6 +37,9 @@ or
 
 If you have installed it using the manual method - just remove anything found in ``C:\Windows\Cursors\Ace Cursors``
 
+## How to actually change the cursor?
+
+[![Image from Gyazo](https://i.gyazo.com/6950029a2463b8fe58cfe3a20d220684.gif)](https://gyazo.com/6950029a2463b8fe58cfe3a20d220684)
 
 ## Creating the installer
 
