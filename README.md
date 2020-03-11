@@ -25,6 +25,9 @@ You may also want to pop the ``Mouse Pointers Properties.lnk`` somewhere sensibl
 %SystemRoot%\System32\rundll32.exe shell32.dll,Control_RunDLL main.cpl,,1
 ```
 
+## Creating the installer
+
+You will need [NSIS](http://nsis.sourceforge.io) - just download this repo and use the installer file ``Installer.nsi`
 
 ## Authors
 
