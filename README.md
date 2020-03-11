@@ -40,7 +40,7 @@ If you have done it the manual method - just remove anything found in ``C:\Windo
 
 ## Creating the installer
 
-You will need [NSIS](http://nsis.sourceforge.io) - just download this repo and use the installer file ``Installer.nsi`
+You will need [NSIS](http://nsis.sourceforge.io) - just download this repo and use the installer file ``Installer.nsi``
 
 ## Authors
 
