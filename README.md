@@ -11,11 +11,11 @@ Windows XP, 7, 8, 10 all supported.
 
 You have a couple of options.
 
-1. The easy way. 
+1. **The easy way.**
 
 Download the installer here and run it. It simply places all the cursors at ``C:\Windows\Cursors\Ace Cursors`` - you then open up your mouse control panel and select a new pointer
 
-2. The manual way.
+2. **The manual way.**
 
 [Download a zip of this directory](https://github.com/AceCentre/AceCursors/archive/master.zip) and manually copy and paste the entire ``Ace Cursors`` directory to ``C:\Windows\Cursors\Ace Cursors``
 
