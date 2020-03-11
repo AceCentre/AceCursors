@@ -29,6 +29,15 @@ You may also want to pop the ``Mouse Pointers Properties.lnk`` somewhere sensibl
 %SystemRoot%\System32\rundll32.exe shell32.dll,Control_RunDLL main.cpl,,1
 ```
 
+## Uninstalling
+
+Navigate to: ``%ProgramData%\Microsoft\Windows\Start Menu\Programs\Ace centre\Ace cursors``
+or 
+``%AppData%\Microsoft\Windows\Start Menu\Programs\Ace centre\Ace cursors`` and double click on the ``UninstallAceCursors.exe`` 
+
+If you have done it the manual method - just remove anything found in ``C:\Windows\Cursors\Ace Cursors``
+
+
 ## Creating the installer
 
 You will need [NSIS](http://nsis.sourceforge.io) - just download this repo and use the installer file ``Installer.nsi`
