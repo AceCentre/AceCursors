@@ -2,9 +2,6 @@
 
 Coloured, Moving and large cursors for all sorts of users. Windows.
 
-## Getting Started
-
-Download the installer and run it.
 
 ### Prerequisites
 
@@ -12,52 +9,28 @@ Windows XP, 7, 8, 10 all supported.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+You have a couple of options.
 
-Say what the step will be
+1. The easy way. 
 
-```
-Give the example
-```
+Download the installer here and run it. It simply places all the cursors at ``C:\Windows\Cursors\Ace Cursors`` - you then open up your mouse control panel and select a new pointer
 
-And repeat
+2. The manual way.
 
-```
-until finished
-```
+[Download a zip of this directory](https://github.com/AceCentre/AceCursors/archive/master.zip) and manually copy and paste the entire ``Ace Cursors`` directory to ``C:\Windows\Cursors\Ace Cursors``
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+You may also want to pop the ``Mouse Pointers Properties.lnk`` somewhere sensible like the shortcut. Its a quick link to the mouse pointers properties control panel. If you want you can make this yourself by creating a shortcut with the following as the destination
 
 ```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
+%SystemRoot%\System32\rundll32.exe shell32.dll,Control_RunDLL main.cpl,,1
 ```
 
 
 ## Authors
 
+David Colven, Ace Centre
 	
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
