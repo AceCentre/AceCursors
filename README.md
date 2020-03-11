@@ -2,6 +2,7 @@
 
 Coloured, Moving and large cursors for all sorts of users. Windows.
 
+![](https://github.com/AceCentre/AceCursors/blob/master/cursors.jpg?raw=true)
 
 ### Prerequisites
 
