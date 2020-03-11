@@ -239,16 +239,15 @@ SectionEnd
 Section -AdditionalIcons
   CreateDirectory "$SMPROGRAMS\Ace Centre"
   CreateDirectory "$SMPROGRAMS\Ace Centre\Ace Cursors"
-  CreateShortCut "$SMPROGRAMS\Ace Centre\Ace Cursors\Uninstall Ace Cursors.lnk" "$INSTDIR\uninst.exe"
   SetOutPath "$SMPROGRAMS\Ace Centre\Ace Cursors"
   SetOverwrite try
   File "Mouse Pointers Properties.lnk"
 SectionEnd
 
 Section -Post
-  WriteUninstaller "$SMPROGRAMS\Ace Centre\Ace Cursors\uninst.exe"
+  WriteUninstaller "$SMPROGRAMS\Ace Centre\Ace Cursors\UninstallAceCursors.exe"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayName" "$(^Name)"
-  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "UninstallString" "$INSTDIR\uninst.exe"
+  WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "UninstallString" "$INSTDIR\UninstallAceCursors.exe"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayVersion" "${PRODUCT_VERSION}"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "URLInfoAbout" "${PRODUCT_WEB_SITE}"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "Publisher" "${PRODUCT_PUBLISHER}"
@@ -267,7 +266,7 @@ FunctionEnd
 
 Section Uninstall
   Delete "$SMPROGRAMS\Ace Centre\Ace Cursors\${PRODUCT_NAME}.url"
-  Delete "$SMPROGRAMS\Ace Centre\Ace Cursors\uninst.exe"
+  Delete "$SMPROGRAMS\Ace Centre\Ace Cursors\UninstallAceCursors.exe"
   Delete "$INSTDIR\Right hand\narrow blink yellow fast.ani"
   Delete "$INSTDIR\Right hand\Left dagger.cur"
   Delete "$INSTDIR\Right hand\spectrum.ani"
