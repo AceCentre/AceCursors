@@ -14,7 +14,7 @@ You have a couple of options.
 
 1. **The easy way.**
 
-[Download the installer here](https://github.com/AceCentre/AceCursors/releases/download/1.0/Setup.exe) and run it. It simply places all the cursors at ``C:\Windows\Cursors\Ace Cursors`` - you then open up your mouse control panel and select a new pointer. We have tried to make this a bit easier by creating a shortcut to this in your ``Start Menu/Ace Centre/Ace Cursors`` folder. 
+[Download the installer here](https://github.com/AceCentre/AceCursors/releases/download/1.0/Setup.exe) and run it. It simply places all the cursors at ``C:\Windows\Cursors\Ace Cursors`` - you then open up your mouse control panel and select a new pointer. We have tried to make this a bit easier by creating a shortcut to this in your ``Start Menu/Ace Centre/Ace Cursors`` folder. **NB: If you are a sysadmin and want a msi we have a wrapped msi installer [here](https://github.com/AceCentre/AceCursors/releases/download/1.0/Setup.msi)**
 
 2. **The manual way.**
 
