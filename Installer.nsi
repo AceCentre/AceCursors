@@ -37,7 +37,7 @@
 
 Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
 OutFile "Setup.exe"
-InstallDir "$WINDIR\Cursors\AceCursors\"
+InstallDir "$WINDIR\Cursors\Ace Cursors\"
 ShowInstDetails show
 ShowUnInstDetails show
 
@@ -238,16 +238,16 @@ SectionEnd
 
 Section -AdditionalIcons
   SetOutPath $INSTDIR
-  WriteIniStr "$INSTDIR\${PRODUCT_NAME}.url" "InternetShortcut" "URL" "${PRODUCT_WEB_SITE}"
-  CreateDirectory "$SMPROGRAMS\Ace Centre"
+  CreateDirectory "$MSPROGRAMS\Ace Centre"
   CreateDirectory "$MSPROGRAMS\Ace Centre\Ace Cursors"
   CreateShortCut "$SMPROGRAMS\Ace Centre\Ace Cursors\Website.lnk" "$INSTDIR\${PRODUCT_NAME}.url"
   CreateShortCut "$SMPROGRAMS\Ace Centre\Ace Cursors\Uninstall.lnk" "$INSTDIR\uninst.exe"
   CreateShortCut "$SMPROGRAMS\Ace Centre\Ace Cursors\Open Mouse Pointers.lnk" "%SystemRoot%\System32\rundll32.exe shell32.dll,Control_RunDLL main.cpl,,1"
+  WriteIniStr "$MSPROGRAMS\Ace Centre\Ace Cursors\${PRODUCT_NAME}.url" "InternetShortcut" "URL" "${PRODUCT_WEB_SITE}"
 SectionEnd
 
 Section -Post
-  WriteUninstaller "$INSTDIR\uninst.exe"
+  WriteUninstaller "$MSPROGRAMS\Ace Centre\Ace Cursors\uninst.exe"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayName" "$(^Name)"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "UninstallString" "$INSTDIR\uninst.exe"
   WriteRegStr ${PRODUCT_UNINST_ROOT_KEY} "${PRODUCT_UNINST_KEY}" "DisplayVersion" "${PRODUCT_VERSION}"
@@ -267,8 +267,8 @@ Function un.onInit
 FunctionEnd
 
 Section Uninstall
-  Delete "$INSTDIR\${PRODUCT_NAME}.url"
-  Delete "$INSTDIR\uninst.exe"
+  Delete "$MSPROGRAMS\Ace Centre\Ace Cursors\${PRODUCT_NAME}.url"
+  Delete "$MSPROGRAMS\Ace Centre\Ace Cursors\uninst.exe"
   Delete "$INSTDIR\Right hand\narrow blink yellow fast.ani"
   Delete "$INSTDIR\Right hand\Left dagger.cur"
   Delete "$INSTDIR\Right hand\spectrum.ani"
@@ -457,7 +457,7 @@ Section Uninstall
   Delete "$INSTDIR\Left hand\medium black.cur"
   Delete "$INSTDIR\Left hand\spectrum fast.ani"
 
-  Delete "$SMPROGRAMS\Ace Centre\\Ace Cursors\Uninstall.lnk"
+  Delete "$SMPROGRAMS\Ace Centre\Ace Cursors\Uninstall.lnk"
   Delete "$SMPROGRAMS\Ace Centre\Ace Cursors\Website.lnk"
   Delete "$SMPROGRAMS\Ace Centre\Ace Cursors\Open Mouse Pointers.lnk"
 
