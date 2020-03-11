@@ -239,10 +239,8 @@ SectionEnd
 Section -AdditionalIcons
   CreateDirectory "$SMPROGRAMS\Ace Centre"
   CreateDirectory "$SMPROGRAMS\Ace Centre\Ace Cursors"
-  CreateShortCut "$SMPROGRAMS\Ace Centre\Ace Cursors\Website.lnk" "$INSTDIR\${PRODUCT_NAME}.url"
-  CreateShortCut "$SMPROGRAMS\Ace Centre\Ace Cursors\Uninstall.lnk" "$INSTDIR\uninst.exe"
+  CreateShortCut "$SMPROGRAMS\Ace Centre\Ace Cursors\Uninstall Ace Cursors.lnk" "$INSTDIR\uninst.exe"
   CreateShortCut "$SMPROGRAMS\Ace Centre\Ace Cursors\Open Mouse Pointers.lnk" "%SystemRoot%\System32\rundll32.exe shell32.dll,Control_RunDLL main.cpl,,1"
-  WriteIniStr "$SMPROGRAMS\Ace Centre\Ace Cursors\${PRODUCT_NAME}.url" "InternetShortcut" "URL" "${PRODUCT_WEB_SITE}"    
 SectionEnd
 
 Section -Post
@@ -456,8 +454,7 @@ Section Uninstall
   Delete "$INSTDIR\Left hand\medium black.cur"
   Delete "$INSTDIR\Left hand\spectrum fast.ani"
 
-  Delete "$SMPROGRAMS\Ace Centre\Ace Cursors\Uninstall.lnk"
-  Delete "$SMPROGRAMS\Ace Centre\Ace Cursors\Website.lnk"
+  Delete "$SMPROGRAMS\Ace Centre\Ace Cursors\Uninstall Ace Cursors.lnk"
   Delete "$SMPROGRAMS\Ace Centre\Ace Cursors\Open Mouse Pointers.lnk"
 
   RMDir "$SMPROGRAMS\Ace Centre\Ace Cursors"
